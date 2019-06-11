@@ -4,13 +4,15 @@
    "version": "0.0.1",
    "private": true,
    "scripts": {
-      "start": "nodemon index.js"
+      "start": "nodemon index.js",
+      "test-jenkins": "JUNIT_REPORT_PATH=/report.xml mocha --colors --reporter mocha-jenkins-reporter"
    },
    "dependencies": {
       "express": "3.12.0"
    },
    "devDependencies": {
       "mocha": "1.20.1",
+      "mocha-jenkins-reporter": "0.4.1",
       "supertest": "0.13.0"
    }
 }
